@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.nttdata.bootcamp.singleton.SingletonPersona;
 
+//-----------------------------------
+//MI NOMBRE ES RAÚL VILLODRES MORENO
+//-----------------------------------
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
 	public static void main(String[] args) {
@@ -14,7 +17,7 @@ public class DemoApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		SingletonPersona singletonPersona = new SingletonPersona("Algo", 12);
+		SingletonPersona singleton = SingletonPersona.getInstance("FOO");
 		
 		
 	}
