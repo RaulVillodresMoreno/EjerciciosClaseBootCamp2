@@ -17,7 +17,13 @@ public class DemoApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		SingletonPersona singleton = SingletonPersona.getInstance("FOO");
+		Persona persona = new Persona("Prueba", 11);
+		Persona persona2 = persona.clone();
+		
+		persona2.setName("prueba2");
+		
+		System.out.println("Persona 1:" + persona.getName());
+		System.out.println("Persona 2: " + persona2.getName());
 		
 		
 	}
